@@ -9,3 +9,8 @@ dist
 *.tsbuildinfo
 next-env.d.ts
 .vercel
+
+# WorkBuddy 环境产物与本地诊断数据，非项目源码
+.wbapp_*.genie
+.workbuddy/
+geo-audit/
