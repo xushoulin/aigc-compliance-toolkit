@@ -21,14 +21,15 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <div className="mb-2 font-medium text-slate-800">免责声明</div>
+            <div className="mb-2 font-medium text-slate-800">依据与免责</div>
             <p className="text-sm leading-relaxed text-slate-500">
-              本工具结果仅供参考，不构成法律意见，不能替代主管部门与平台的认定。请以官方最新规定为准。
+              依据《人工智能生成合成内容标识办法》（2025-09-01 施行）与《微短剧发展管理办法》（2026-09-01 施行）整理。结果仅供参考，不构成法律意见，不能替代主管部门与平台认定。
             </p>
           </div>
         </div>
-        <div className="mt-8 border-t border-slate-100 pt-5 text-xs text-slate-400">
-          © {new Date().getFullYear()} 合规自检工具箱 · 隐私优先，本地运行
+        <div className="mt-8 space-y-1.5 border-t border-slate-100 pt-5 text-xs text-slate-400">
+          <p>© {new Date().getFullYear()} 合规自检工具箱 · 隐私优先，本地运行 · 规则依据更新于 2026-11-17</p>
+          <p>内容主体：合规自检工具箱 · 联系与反馈：通过 GitHub 仓库 xushoulin/aigc-compliance-toolkit 提交 Issue</p>
         </div>
       </div>
     </footer>
