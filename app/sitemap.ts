@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const BASE = "https://aigc-compliance-toolkit.vercel.app";
+import { SITE_URL as BASE } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

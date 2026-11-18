@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site-config";
 
 // AI 搜索与生成式引擎爬虫放行清单：国内（字节/百度/搜狗/神马/360）+ 海外（Google/OpenAI/Anthropic 等）。
 // 规则：默认 ALLOW，不对任何 AI 爬虫设置 Disallow；仅屏蔽无实际抓取价值的路径。
@@ -32,6 +33,6 @@ export default function robots(): MetadataRoute.Robots {
         "Applebot-Extended",
       ].map((userAgent) => ({ userAgent, allow: "/" })),
     ],
-    sitemap: "https://aigc-compliance-toolkit.vercel.app/sitemap.xml",
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

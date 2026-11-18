@@ -2,13 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-// 部署到正式域名时可用 NEXT_PUBLIC_SITE_URL 覆盖；默认 Vercel 域名。
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://aigc-compliance-toolkit.vercel.app";
-const SITE_NAME = "合规自检工具箱";
-const DESCRIPTION =
-  "面向 AI 微短剧制作方的合规自检工具：AI 生成内容标识核查、备案分层判定、授权凭证管理、AI 魔改风险提示。所有文件仅在浏览器本地处理，不上传服务器。";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION as DESCRIPTION } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
