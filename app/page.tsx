@@ -135,7 +135,7 @@ export default function Home() {
       <section className="card mb-14 bg-slate-50">
         <h2 className="mb-4 text-lg font-semibold text-slate-900">为什么需要在发布前做合规自检</h2>
         <p className="mb-5 text-sm leading-relaxed text-slate-600">
-          发布前自检的价值在于把可控风险挡在发布动作之前。据国家广播电视总局 2026 年公开通报，全年累计下架违规微短剧 7.5 万部、处置违规账号 1500 余个，其中 10 月单月清理「AI 魔改」违规视频 11000 余条。这些数字说明「发出去就被下架」并非个别现象，而是常态化治理的结果。本工具把标识、备案、授权、魔改四个环节拆成可逐项核对的自查清单，帮助制作方在投流前发现遗漏。以上数据为公开通报口径，非本工具实测；结果仅供参考，不构成法律意见。
+          发布前自检的价值在于把可控风险挡在发布动作之前。据国家广播电视总局 2026 年 11 月 6 日通报，2026 年以来累计下架违规微短剧 7.5 万部、处置违规账号 1500 余个；据总局督导的重点平台 10 月治理公告，单月清理「AI 魔改」违规视频 11000 余条、处置账号 30 余个。这些数字说明「发出去就被下架」并非个别现象，而是常态化治理的结果。本工具把标识、备案、授权、魔改四个环节拆成可逐项核对的自查清单，帮助制作方在投流前发现遗漏。以上数据均为官方公开通报口径，非本工具实测；结果仅供参考，不构成法律意见。
         </p>
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm">
@@ -143,16 +143,34 @@ export default function Home() {
               <tr className="border-b border-slate-200 text-slate-500">
                 <th className="py-2 pr-4 font-medium">公开通报指标</th>
                 <th className="py-2 pr-4 font-medium">规模</th>
-                <th className="py-2 font-medium">时间口径</th>
+                <th className="py-2 pr-4 font-medium">时间口径</th>
+                <th className="py-2 font-medium">官方来源</th>
               </tr>
             </thead>
             <tbody className="text-slate-700">
-              <tr className="border-b border-slate-100"><td className="py-2 pr-4">累计下架违规微短剧</td><td className="py-2 pr-4">7.5 万部</td><td className="py-2">2026 年</td></tr>
-              <tr className="border-b border-slate-100"><td className="py-2 pr-4">处置违规账号</td><td className="py-2 pr-4">1500 余个</td><td className="py-2">2026 年</td></tr>
-              <tr><td className="py-2 pr-4">单月清理「AI 魔改」视频</td><td className="py-2 pr-4">11000 余条</td><td className="py-2">2026 年 10 月</td></tr>
+              <tr className="border-b border-slate-100">
+                <td className="py-2 pr-4">累计下架违规微短剧</td><td className="py-2 pr-4">7.5 万部</td><td className="py-2 pr-4">2026 年以来</td>
+                <td className="py-2"><a href="https://www.nrta.gov.cn/art/2026/11/6/art_114_74410.html" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">广电总局通报 ↗</a></td>
+              </tr>
+              <tr className="border-b border-slate-100">
+                <td className="py-2 pr-4">处置违规账号</td><td className="py-2 pr-4">1500 余个</td><td className="py-2 pr-4">2026 年以来</td>
+                <td className="py-2"><a href="https://www.nrta.gov.cn/art/2026/11/6/art_114_74410.html" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">广电总局通报 ↗</a></td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4">单月清理「AI 魔改」视频</td><td className="py-2 pr-4">11000 余条</td><td className="py-2 pr-4">2026 年 10 月</td>
+                <td className="py-2"><a href="https://news.cctv.com/2026/11/06/ARTIwgy3HgzO5ePOi4z3D2V6261106.shtml" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">央视网报道 ↗</a></td>
+              </tr>
             </tbody>
           </table>
         </div>
+        <p className="mt-4 text-xs leading-relaxed text-slate-400">
+          规则依据：
+          <a href="https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm" target="_blank" rel="noopener noreferrer" className="hover:underline">《人工智能生成合成内容标识办法》（国家网信办，2025-09-01 施行） ↗</a>
+          　·　
+          <a href="https://www.nrta.gov.cn/art/2026/7/31/art_113_73785.html" target="_blank" rel="noopener noreferrer" className="hover:underline">《微短剧发展管理办法》（广电总局令第 16 号，2026-09-01 施行） ↗</a>
+          　·　
+          <a href="https://gdj.shaanxi.gov.cn/bsfw/wlstczxmsb/glts/202609/t20260910_3683513.html" target="_blank" rel="noopener noreferrer" className="hover:underline">微短剧分类分层标准（陕西省广电局） ↗</a>
+        </p>
       </section>
 
       <section className="card mb-14">
